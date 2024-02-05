@@ -104,17 +104,15 @@ export default function Home() {
 									<div className="pl-4 opacity-60">00.00.{seconds}</div>
 								</>
 							) : (
-								<>
-									<img
-										onClick={() => {
-											startRecord()
-											setIsActive(true)
-										}}
-										src="/record.png"
-										alt="record"
-										className="h-12 w-auto cursor-pointer"
-									/>
-								</>
+								<img
+									onClick={() => {
+										startRecord()
+										setIsActive(true)
+									}}
+									src="/record.png"
+									alt="record"
+									className="h-12 w-auto cursor-pointer"
+								/>
 							)}
 						</div>
 					</div>
