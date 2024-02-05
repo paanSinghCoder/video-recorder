@@ -89,6 +89,9 @@ export default function Home() {
 							</div>
 						)}
 						<div className="">
+							<div className="w-full text-center text-xl pb-3 font-semibold opacity-80">
+								Simple video recorder
+							</div>
 							<video className="h-full w-[890px] rounded-lg" ref={videoRef}></video>
 						</div>
 						<div className="border rounded-3xl px-8 py-2 mt-10 flex items-center justify-center">
