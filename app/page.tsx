@@ -28,7 +28,7 @@ export default function Home() {
 
 	useEffect(() => {
 		if ('MediaRecorder' in window) {
-			navigator.mediaDevices.getUserMedia({ audio: false, video: true }).then(
+			navigator.mediaDevices.getUserMedia({ audio: true, video: true }).then(
 				mediaStream => {
 					setPermissionGranted(true)
 					let video: any = videoRef.current
