@@ -104,21 +104,23 @@ export default function Home() {
 									<div className="pl-4 opacity-60">00.00.{seconds}</div>
 								</>
 							) : (
-								<img
-									onClick={() => {
-										startRecord()
-										setIsActive(true)
-									}}
-									src="/record.png"
-									alt="record"
-									className="h-12 w-auto cursor-pointer"
-								/>
+								<>
+									<img
+										onClick={() => {
+											startRecord()
+											setIsActive(true)
+										}}
+										src="/record.png"
+										alt="record"
+										className="h-12 w-auto cursor-pointer"
+									/>
+								</>
 							)}
 						</div>
 					</div>
 				) : (
 					<div className="border rounded-md p-12 w-[890px] h-auto">
-						<div className="text-xl font-semibold mb-4">Here is your awsome video...</div>
+						<div className="text-xl font-semibold mb-4">❤ Here is your awsome video...</div>
 						<video src={video} className="h-auto w-full" controls></video>
 						<div className="flex gap-4  items-center justify-center w-full p-7">
 							<button
@@ -128,10 +130,10 @@ export default function Home() {
 									// setVideo(null)
 									window.location.reload()
 								}}>
-								Record another video
+								🡠 Record another video
 							</button>
 							<a className="border rounded-md shadow px-4 py-2 font-bold" download href={video}>
-								Download
+								⬇ Download
 							</a>
 						</div>
 					</div>
